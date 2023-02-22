@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    background-color: blue;
+}
+
+nav{
+    background-color: green;
+}
+
+footer{
+    color: white;
+    height: 250px;
+    background-color: #222;
+    text-shadow: -1px 2px 2px #000;
+}
