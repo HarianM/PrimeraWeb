@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="global.js"></script>
     <link href="global.css" type="text/css" rel="stylesheet">
-    <title>Document</title>
+    <title>Harian Martinez - Primera Web</title>
+    <script>
+        if(!sessionStorage.getItem('lang')){
+            sessionStorage.setItem('lang', window.navigator.language.substring(0,2))
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -24,6 +29,8 @@
         <p>
             este es mi primer cambio en html, y voy a comprobarlo con git
         </p>
+        <h1>Introducción</h1>
+        <p>HTML es uno de los primeros lenguajes que se deben conocer para introducirse en el maravilloso mundo del desarrollo web. Puede decirse hoy, con toda seguridad, que la web es una tecnología que ha permitido que la información llegue a casi todas las personas del mundo.</p>
     </article>
     <footer name="footer">
         <p>All right reserved.</p>

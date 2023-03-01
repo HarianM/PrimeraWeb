@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="global.js"></script>
+    <link href="global.css" type="text/css" rel="stylesheet">
+    <title>HTML - Tutorial</title>
+    <script>
+        if(!sessionStorage.getItem('lang')){
+            sessionStorage.setItem('lang', window.navigator.language.substring(0,2))
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="view/home.html">Home</a></li>
+                <li><a href="view/products.html">Product</a></li>
+                <li><a href="view/about.html">About</a></li>
+                <li><a href="view/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h1>Introducción</h1>
+        <p>HTML es uno de los primeros lenguajes que se deben conocer para introducirse en el maravilloso mundo del desarrollo web. Puede decirse hoy, con toda seguridad, que la web es una tecnología que ha permitido que la información llegue a casi todas las personas del mundo.</p>
+        <h1>Qué es HTML</h1>
+            <p>HTML son las siglas de (<b>H</b>yper <b>T</b>ext <b>M</b>ark <b>L</b>anguage) ó lenguaje de marcado de hipertexto, es una de las principales tecnologías para la construcción de un sitio o una aplicación web. Con HTML es posible definir la estructura de una página web.</p>
+            <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>
+            
+    </article>
+</body>
+</html>
