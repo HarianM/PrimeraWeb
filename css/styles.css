@@ -16,12 +16,14 @@ body{
     margin: 0 auto;
 }
 
+article{
+    margin: 0px 150px;
+}
+
 header{
-    background-color: blue;
 }
 
 nav{
-    background-color: green;
 }
 
 footer{
