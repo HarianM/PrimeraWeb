@@ -26,6 +26,29 @@ header{
 nav{
 }
 
+#main_menu{
+}
+
+#main-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+#main-menu ul li{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main-menu ul li:hover{
+    background-color: red;
+}
+
+#main-menu ul li a{
+    color: #222;
+    text-decoration: none;
+}
+
 footer{
     color: white;
     height: 250px;
