@@ -56,6 +56,16 @@ footer{
     text-shadow: -1px 2px 2px #000;
 }
 
+table, th, td {
+    border: 1px solid;
+}
+
+#entidades{
+    height: 500px;
+    overflow: scroll;
+    margin-left: 25px;
+}
+
 /**
  * MODULE
  */
