@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +15,15 @@
     </script>
 </head>
 <body>
+
     <article>
-        <div class="indice">
-            <ul>
-                <li><a href="#introduccion">Introduccion</a></li>
-                <li><a href="#parrafos">Párrafos</a></li>
-            </ul>
-        </div>
-        <h1 id="introduccion">Introducción</h1>
+        <h1>Introducción</h1>
         <p>HTML es uno de los primeros lenguajes que se deben conocer para introducirse en el maravilloso mundo del desarrollo web. Puede decirse hoy, con toda seguridad, que la web es una tecnología que ha permitido que la información llegue a casi todas las personas del mundo.</p>
-        <h1>Qué es HTML</h1>
-        <p>HTML son las siglas de (<b>H</b>yper <b>T</b>ext <b>M</b>ark <b>L</b>anguage) ó lenguaje de marcado de hipertexto, es una de las principales tecnologías para la construcción de un sitio o una aplicación web. Con HTML es posible definir la estructura de una página web.</p>
+        <h1 id="html">Qué es HTML</h1>"
+        <p>HTML son las siglas de (<b>H</b>y&Alpha;per <b>T</b>ext <b>M</b>ark <b>L</b>anguage) ó lenguaje de marcado de hipertexto, es una de las principales tecnologías para la construcción de un sitio o una aplicación web. Con HTML es posible definir la estructura de una página web.</p>
         <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>
         <hr>
-        <h1>Encabezados</h1>
+        <h1 id="encabezados">Encabezados</h1>
         <p>Los encabezados HTML o heading tags son etiquetas de código HTML que se utilizan para definir los títulos y subtítulos de una página. Además, son una potente herramienta de SEO (Search Engine Optimization) ya que, gracias a estos encabezados HTML podemos brindarle jerarquía a la información e indicarle a los motores de búsqueda de qué va el contenido de nuestra página web.</p>
         <h1>Encabezado h1</h1>
         <h2>Encabezado h2</h2>
@@ -36,9 +32,8 @@
         <h5>Encabezado h5</h5>
         <h6>Encabezado h6</h6>
         <hr>
-        <h1>Párrafos</h1>
+        <h1 id="parrafos">Párrafos</h1>
         <p>En un documento HTML, para escribir un párrafo se usa el elemento "p", cuyas etiquetas de inicio y fin son, respectivamente: &lt;p&gt; y &lt;/p&gt;.</p>
-        
         <h1>Entidades de carácter en HTML</h1>
         <p>Las entidades de carácter son referencias a un carácter y se representa con la sintaxis <mark class="code">&amp;nombre;</mark>. Para mostrar el código html como texto utilizaremos éstas dos entidades de carácter:</p>
         <p>Una entidad HTML es un conjunto de caracteres ("string") que comienza con un ampersand ( & ) y termina con un punto y coma (;) . Las entidades son utilizadas frecuentemente para imprimir en pantalla caracteres reservados (aquellos que serían interpretados como HTML por el navegador) o invisibles (cómo tabulaciones).</p>
@@ -56,7 +51,7 @@
             <li>Tema 2</li>
             <li>Tema 3</li>
         </ul>
-        <h1 id="parrafos">Párrafos</h1>
+        <h1>Párrafos</h1>
         <table>
             <tr>
                 <th>Etiqueta</th>
@@ -79,9 +74,44 @@
                 <td>Con la etiqueta &lt;u&gt; que viene de <u>underline</u>. Es la forma semánticamente correcta de poner un texto subrayado de cara tanto visualmente para el lector como internamente para los buscadores.</td>
             </tr>
         </table>
+        <h1 id="Entidades">Entidades de carácter en HTML</h1>
+        <p>Las entidades de carácter son referencias a un carácter y se representa con la sintaxis <mark class="code">&amp;nombre;</mark>. Para mostrar el código html como texto utilizaremos éstas dos entidades de carácter:</p>
+        <p>Una entidad HTML es un conjunto de caracteres ("string") que comienza con un ampersand ( & ) y termina con un punto y coma (;) . Las entidades son utilizadas frecuentemente para imprimir en pantalla caracteres reservados (aquellos que serían interpretados como HTML por el navegador) o invisibles (cómo tabulaciones).</p>
+        <div id="entidades"></div>
+        <h2>Lista Ordenada</h2>
+        <p>Lista ordenada me permite crear una lista enumerada de elementos de un conjunto objetos, personas, ciudades, etc...</p>
+        <ol id="OrderList">
+            <li>Tema 1</li>
+            <li>Tema 2</li>
+            <li>Tema 3</li>
+        </ol>
+        <h2>Lista Desordenada</h2>
+        <ul name="unOrderList">
+            <li>Tema 1</li>
+            <li>Tema 2</li>
+            <li>Tema 3</li>
+        </ul>
+        <img src="https://loremflickr.com/640/360" />
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" >
+            <title>Estructura basica del SVG</title>
+            <style>
+                .circle {fill: blue}
+            </style>
+            <circle class="circle" cx="5" cy="5" r="5" />
+        </svg>
+        <video controls src="../../video/171124_C1_HD_012.mp4"></video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OOy764mDtiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr>
+        <br><br><br>
+        <form>
+            <input type="text"/>
+            <input type="email"/>
+            <input type="password"/>
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+        <br><br><br>
+        <hr>
     </article>
-    <footer name="footer">
-        <p>All right reserved.</p>
-    </footer>
 </body>
 </html>
