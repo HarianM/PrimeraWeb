@@ -29,6 +29,15 @@ nav{
 #main_menu{
 }
 
+.indice{
+    width: 25vw;
+    color: #333;
+    background-color: #999;
+}
+.indice a{
+    color: aquamarine;
+}
+
 #main-menu ul{
     display: flex;
     list-style: none;
