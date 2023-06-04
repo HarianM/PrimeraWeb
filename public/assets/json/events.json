@@ -1,0 +1,75 @@
+{
+    "form":{
+        "onblur":{"description":"Fires the moment that the element loses focus"},
+        "onchange":{"description":"Fires the moment when the value of the element is changed"},
+        "oncontextmenu":{"description":"Script to be run when a context menu is triggered"},
+        "onfocus":{"description":"Fires the moment when the element gets focus"},
+        "oninput":{"description":"Script to be run when an element gets user input"},
+        "oninvalid":{"description":"Script to be run when an element is invalid"},
+        "onreset":{"description":"Fires when the Reset button in a form is clicked"},
+        "onsearch":{"description":"Fires when the user writes something in a search field (for <input=\"search\">)"},
+        "onselect":{"description":"Fires after some text has been selected in an element"},
+        "onsubmit":{"description":"Fires when a form is submitted"}
+    },
+    "keyboard":{
+        "onkeydown":{"description":"Fires when a user is pressing a key"},
+        "onkeypress":{"description":"Fires when a user presses a key"},
+        "onkeyup":{"description":"Fires when a user releases a key"}
+    },
+    "mouse":{
+        "onclick":{"description":"Fires on a mouse click on the element"},
+        "ondblclick":{"description":"Fires on a mouse double-click on the element"},
+        "onmousedown":{"description":"Fires when a mouse button is pressed down on an element"},
+        "onmousemove":{"description":"Fires when the mouse pointer is moving while it is over an element"},
+        "onmouseout":{"description":"Fires when the mouse pointer moves out of an element"},
+        "onmouseover":{"description":"Fires when the mouse pointer moves over an element"},
+        "onmouseup":{"description":"Fires when a mouse button is released over an element"},
+        "onmousewheel":{"description":"Deprecated. Use the onwheel attribute instead"},
+        "onwheel":{"description":"Fires when the mouse wheel rolls up or down over an element"}
+    },
+    "drag":{
+        "ondrag":{"description":"The event occurs when an element is being dragged"},
+        "ondragend":{"description":"The event occurs when the user has finished dragging an element"},
+        "ondragenter":{"description":"The event occurs when the dragged element enters the drop target"},
+        "ondragleave":{"description":"The event occurs when the dragged element leaves the drop target"},
+        "ondragover":{"description":"The event occurs when the dragged element is over the drop target"},
+        "ondragstart":{"description":"The event occurs when the user starts to drag an element"},
+        "ondrop":{"description":"The event occurs when the dragged element is dropped on the drop target"}
+    },
+    "clipboard":{
+        "oncopy":{"description":"Fires when the user copies the content of an element"},
+        "oncut":{"description":"Fires when the user cuts the content of an element"},
+        "onpaste":{"description":"Fires when the user pastes some content in an element"}
+    },
+    "multimedia":{
+        "onabort":{"description":"Script to be run on abort"},
+        "oncanplay":{"description":"Script to be run when a file is ready to start playing (when it has buffered enough to begin)"},
+        "oncanplaythrough":{"description":"Script to be run when a file can be played all the way to the end without pausing for buffering"},
+        "oncuechange":{"description":"Script to be run when the cue changes in a <track> element"},
+        "ondurationchange":{"description":"Script to be run when the length of the media changes"},
+        "onemptied":{"description":"Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects)"},
+        "onended":{"description":"Script to be run when the media has reach the end (a useful event for messages like \"thanks for listening\")"},
+        "onerror":{"description":"Script to be run when an error occurs when the file is being loaded"},
+        "onloadeddata":{"description":"Script to be run when media data is loaded"},
+        "onloadedmetadata":{"description":"Script to be run when meta data (like dimensions and duration) are loaded"},
+        "onloadstart":{"description":"Script to be run just as the file begins to load before anything is actually loaded"},
+        "onpause":{"description":"Script to be run when the media is paused either by the user or programmatically"},
+        "onplay":{"description":"Script to be run when the media is ready to start playing"},
+        "onplaying":{"description":"Script to be run when the media actually has started playing"},
+        "onprogress":{"description":"Script to be run when the browser is in the process of getting the media data"},
+        "onratechange":{"description":"Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode)"},
+        "onseeked":{"description":"Script to be run when the seeking attribute is set to false indicating that seeking has ended"},
+        "onseeking":{"description":"Script to be run when the seeking attribute is set to true indicating that seeking is active"},
+        "onstalled":{"description":"Script to be run when the browser is unable to fetch the media data for whatever reason"},
+        "onsuspend":{"description":"Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason"},
+        "ontimeupdate":{"description":"Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media)"},
+        "onvolumechange":{"description":"Script to be run each time the volume is changed which (includes setting the volume to \"mute\")"},
+        "onwaiting":{"description":"Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data)"}
+    },
+    "touch":{
+        "ontouchcancel":{"description":"The event occurs when the touch is interrupted"},
+        "ontouchend":{"description":"The event occurs when a finger is removed from a touch screen"},
+        "ontouchmove":{"description":"The event occurs when a finger is dragged across the screen"},
+        "ontouchstart":{"description":"The event occurs when a finger is placed on a touch screen"}
+    }
+}

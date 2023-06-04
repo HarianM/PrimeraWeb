@@ -124,10 +124,12 @@ ul {
 }
 
 p {
-  font-size: 15px;
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #3B566E;
 }
 
 img {
@@ -892,7 +894,7 @@ Banner Style
   overflow: hidden;
 }
 
-.main-banner:after {
+/* .main-banner:after {
   content: '';
   background-image: url(../images/slider-left-dec.jpg);
   background-repeat: no-repeat;
@@ -902,7 +904,7 @@ Banner Style
   width: 262px;
   height: 625px;
   z-index: 1;
-}
+} */
 
 .main-banner:before {
   content: '';

@@ -23,6 +23,47 @@ document.addEventListener('DOMContentLoaded',function(event){
     });
 
     var crear = function(elemento){ return document.createElement(elemento);};
+
+
+
+
+    /* Prueba de Loops */
+    function prueba_loops(){
+        let resultados = document.getElementById("resultados");
+        let conn = new XMLHttpRequest(); 
+        conn.onreadystatechange = function(){
+            if(conn.readyState === 4 && conn.status === 200){
+                let obj = JSON.parse(conn.responseText);
+                Object.entries(obj).map(elemento => {
+                    const[clave, objeto] = elemento;
+                    Object.entries(objeto).map(elementos => {
+                        const[key] = elementos;
+                        resultados.innerHTML += `<p>${clave}:${key}</p>`;
+                    });
+                });
+            }
+        }
+        conn.open("GET","assets/json/events.json",false);
+        conn.send();
+
+        
+
+        // let elementos = JSON.parse(consulta);
+
+        // console.log(consulta || "no encontre resultados");
+        // Object.entries(elementos).map(elemento => {
+        //     const [clave, objeto] = elemento;
+        //     resultado.innerHTML += `<p>${objeto}</p>`
+        //     if(objeto.flow === "inline"){
+        //         a = document.createElement("a");
+        //         a.setAttribute("href", "#");
+        //         a.appendChild(document.createTextNode(`${clave} `));
+        //         fragmento.appendChild(a);
+        //     // }
+        // });
+        // contenedor.appendChild(fragmento);
+    }
+    prueba_loops();
     
     function entidades(){
         // let conn = new Xhr({path:"json/entities.json"}).result;
@@ -31,7 +72,7 @@ document.addEventListener('DOMContentLoaded',function(event){
             if(conn.readyState === 4 && conn.status === 200){
     
                 let fragmento = document.createDocumentFragment();
-                let elemento = document.getElementById("entidades");
+                let elemento = document.getElementById("resultados");
                 let obj = JSON.parse(conn.responseText);
     
                 table = crear("table");
@@ -69,5 +110,60 @@ document.addEventListener('DOMContentLoaded',function(event){
         conn.send();
     }
 
-    entidades();
+    // entidades();
 });
+
+// Tipos de datos en Javascript
+/**
+ * Caracteres: Letras
+ * Enteros: 1, 2, 3
+ * Flotantes: 3.1416
+ * Booleanos: TRUE || FALSE
+ * funtion nombre(){
+ * }
+ */
+
+// Como definir una variable en Javascript
+/**
+ * A través de palabra "VAR"
+ * A través de palabra "LET"
+ */
+
+// Contexto global y contexto local
+
+// Operadores de Javascript
+/**
+ * Suma: +
+ * Resta: -
+ * Multiplicación: *
+ * División: /
+ * Residuo: %
+ */
+
+// Como seleccionar un elemento
+/**
+ * ID
+ * Etiqueta
+ * Nombre de la clase
+ */
+
+// Condicionales
+/**
+ * if(1 < 2){...}
+ * else{...}
+ */
+
+// LOOPS
+/**
+ * 1. for(variable, condicion, manejador){}
+ * 2. while(){...}
+ * 3. Do () While ()
+ */
+
+// var formulario = document.getElementById("formulario_de_prueba");
+// var resultado = document.getElementById("formulario_resultados");
+// formulario.addEventListener("submit", function(e){
+//     e.preventDefault();
+//     resultado.innerHTML = '<p>Mi nombre es: ' + e.target.nombre.value + ' mi contraseña es: ' + e.target.contraseña.value;
+//     console.log(e.target.nombre.value);
+// });
